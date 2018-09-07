@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./controller/involice.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="text" ng-model='name'>
+  </div>
+  <div>
+    {{name}}
+  </div>
+  <div ng-controller ='involiceCtrl'>
+    <button ng-click='chiliSpicy()'>Chili</button>
+    <button ng-click='jalapenoSpicy()'>Jalapeno</button>
+
+    <div ng-controller='authorCtrl'>
+      <span>name: </span> {{author}} <span>{{artist}}</span>
+      <p>The food is {{spice}} spicy!</p>
+    </div>
+  </div>
+  <script src="./controller/involice.js"></script>
+</body>
+</html>
